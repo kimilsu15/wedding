@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { weddingData } from "@/lib/weddingData";
+import WeddingTextAnimation from "@/components/WeddingTextAnimation";
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);
@@ -13,23 +14,22 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
-      {/* 배경 이미지 */}
+      {/* 배경 이미지 — z-0 */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${weddingData.gallery[0].src})`,
-        }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        style={{ backgroundImage: `url(${weddingData.gallery[0].src})` }}
       />
-      {/* 오버레이 */}
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/60 via-charcoal-900/40 to-charcoal-900/70" />
 
-      {/* 장식 보더 */}
-      <div className="absolute inset-4 border border-white/20 pointer-events-none" />
-      <div className="absolute inset-6 border border-white/10 pointer-events-none" />
+      {/* 오버레이 — z-10 */}
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/60 via-charcoal-900/40 to-charcoal-900/70 z-10" />
 
-      {/* 상단 장식 */}
+      {/* 장식 보더 — z-20 */}
+      <div className="absolute inset-4 border border-white/20 pointer-events-none z-20" />
+      <div className="absolute inset-6 border border-white/10 pointer-events-none z-20" />
+
+      {/* 상단 장식 — z-20 */}
       <div
-        className={`absolute top-12 flex flex-col items-center gap-2 transition-all duration-1000 ${
+        className={`absolute top-12 flex flex-col items-center gap-2 z-20 transition-all duration-1000 ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
         }`}
       >
@@ -39,11 +39,20 @@ export default function HeroSection() {
         </span>
       </div>
 
-      {/* 메인 콘텐츠 */}
-      <div className="relative z-10 text-center px-8">
+      {/* 메인 콘텐츠 — z-30 (배경·오버레이 위) */}
+      <div className="relative z-30 text-center px-8 w-full max-w-lg mx-auto">
+        {/* ✅ We're getting Married! 애니메이션 */}
+        <WeddingTextAnimation
+          line1="We're getting"
+          line2="Married!"
+          duration={3200}
+          delay={600}
+          textColor="#f5e6c8"
+        />
+
         {/* 날짜 */}
         <div
-          className={`transition-all duration-1000 delay-300 ${
+          className={`mt-6 transition-all duration-1000 delay-300 ${
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -58,7 +67,7 @@ export default function HeroSection() {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="flex items-center justify-center gap-6 mb-3">
+          <div className="flex items-center justify-center gap-6 mb-12">
             <div className="text-center">
               <p className="text-white/60 text-xs tracking-[0.2em] font-sans font-light mb-1">
                 GROOM
@@ -73,11 +82,8 @@ export default function HeroSection() {
 
             <div className="flex flex-col items-center gap-2">
               <div className="w-px h-8 bg-gold-300/60" />
-              <span
-                className="text-gold-200 font-serif italic"
-                style={{ fontSize: "1.4rem" }}
-              >
-                &
+              <span className="text-gold-200 font-serif italic" style={{ fontSize: "1.4rem" }}>
+                &amp;
               </span>
               <div className="w-px h-8 bg-gold-300/60" />
             </div>
@@ -95,42 +101,11 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-
-        {/* 영문 이름 */}
-        <div
-          className={`transition-all duration-1000 delay-700 ${
-            loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <p className="text-white/50 text-xs tracking-[0.25em] font-sans font-light mt-4">
-            {weddingData.groom.english} · {weddingData.bride.english}
-          </p>
-        </div>
-
-        {/* 장소 & 시간 */}
-        <div
-          className={`mt-12 transition-all duration-1000 delay-900 ${
-            loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <div className="inline-block border border-white/25 px-8 py-4">
-            <p className="text-white/90 text-sm font-serif font-light tracking-wider">
-              {weddingData.wedding.date}
-            </p>
-            <p className="text-white/70 text-xs font-sans font-light mt-1 tracking-wider">
-              {weddingData.wedding.time}
-            </p>
-            <div className="w-full h-px bg-white/20 my-3" />
-            <p className="text-white/90 text-sm font-serif font-light">
-              {weddingData.wedding.venue}
-            </p>
-          </div>
-        </div>
       </div>
 
-      {/* 하단 스크롤 인디케이터 */}
+      {/* 하단 스크롤 인디케이터 — z-20 */}
       <div
-        className={`absolute bottom-10 flex flex-col items-center gap-2 transition-all duration-1000 delay-1000 ${
+        className={`absolute bottom-10 flex flex-col items-center gap-2 z-20 transition-all duration-1000 delay-1000 ${
           loaded ? "opacity-100" : "opacity-0"
         }`}
       >
