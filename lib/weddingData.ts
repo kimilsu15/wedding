@@ -69,7 +69,7 @@ export const weddingData = {
   gallery: [
     {
       id: 1,
-      src: "/images/hero/heroSection.jpg",
+      src: "/images/hero/heroSection.png",
       alt: "웨딩 사진 1",
       featured: true,
     },
