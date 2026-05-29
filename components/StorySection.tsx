@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { weddingData } from "@/lib/weddingData";
+import LineBreakText from "@/util/Linebreaktext";
 
 // ─── 스크롤 fade-in 훅 ───────────────────────────────────────
 function useFadeIn(threshold = 0.2) {
@@ -57,12 +58,13 @@ function StoryRow({ item, index }: { item: StoryItem; index: number }) {
           {item.highlight}
         </p>
       )}
-      <p
+      {/* <p
         className="text-gray-500 font-sans font-light leading-relaxed"
         style={{ fontSize: "clamp(0.78rem, 3vw, 0.88rem)" }}
       >
         {item.description}
-      </p>
+      </p> */}
+      <LineBreakText text={item.description} className="text-gray-500 font-sans font-light leading-relaxed text-xs" />
     </div>
   );
 

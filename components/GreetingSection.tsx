@@ -185,7 +185,7 @@ function PersonCard({
           </a>
         </div>
 
-        <p className="text-gray-400 text-sm font-sans">{birth}</p>
+        {/* <p className="text-gray-400 text-sm font-sans">{birth}</p> */}
         <div className="w-8 h-px bg-gray-200" />
 
         <div className="space-y-0.5 mb-3">

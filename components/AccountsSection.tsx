@@ -64,11 +64,39 @@ function CopyButton({ text }: { text: string }) {
 
 // ─── 카카오페이 버튼 ─────────────────────────────────────────
 function KakaoPayButton({ link }: { link: string }) {
+  const handleClick = () => {
+    // 1. 카카오페이 앱 딥링크 시도
+    const appScheme = link.startsWith("kakaopay://") ? link : `kakaopay://send?${link}`;
+    window.location.href = link; // 송금 링크(https://qr.kakaopay.com/...) 그대로 사용
+ 
+    // 2. 일정 시간 후 앱이 없으면 스토어로 이동
+    const timer = setTimeout(() => {
+      const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const isAndroid = /Android/i.test(navigator.userAgent);
+ 
+      if (isIOS) {
+        window.location.href = "https://apps.apple.com/kr/app/kakaopay/id1315064630";
+      } else if (isAndroid) {
+        window.location.href = "market://details?id=com.kakaopay.app";
+      } else {
+        // PC — 카카오페이 웹으로
+        window.open(link, "_blank");
+      }
+    }, 1500);
+ 
+    // 페이지가 숨겨지면(앱이 열리면) 타이머 취소
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        clearTimeout(timer);
+        document.removeEventListener("visibilitychange", handleVisibilityChange);
+      }
+    };
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+  };
+ 
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      onClick={handleClick}
       className="flex items-center gap-1 px-3 py-1.5 rounded text-black font-bold transition-opacity hover:opacity-80"
       style={{ backgroundColor: "#FEE500", fontSize: "0.75rem" }}
       aria-label="카카오페이로 송금"
@@ -78,7 +106,7 @@ function KakaoPayButton({ link }: { link: string }) {
         <path d="M12 5C8.13 5 5 7.69 5 11c0 2.11 1.3 3.97 3.26 5.08L7.5 19l3.34-2.18c.38.05.77.08 1.16.08 3.87 0 7-2.69 7-6s-3.13-6-7-6z" fill="#FEE500"/>
       </svg>
       pay
-    </a>
+    </button>
   );
 }
 

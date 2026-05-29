@@ -8,7 +8,7 @@ export const weddingData = {
     english: "Junghyo Lee",
     father: "이인수",
     mother: "오희순",
-    phone: "010-1234-5678",
+    phone: "010-9129-8957",
     birth : "94년 8월 30일",
     tags: ["유머러스함", "운동 러버"],
     resolution : "소나무같은 남편이/br되겠습니다",
@@ -35,14 +35,14 @@ export const weddingData = {
     date: "2026년 8월 15일 토요일",
     dateObj: new Date("2026-08-15T11:30:00"),
     time: "오전 14시 30분",
-    venue: "국민연금공단 1층 컨벤션홀",
+    venue: "국민연금웨딩홀 1층 컨벤션(CONVENTION)홀 ",
     venueDetail: "부산 연제구 중앙대로 1000",
     venuePhone: "02-1234-5678",
     mapUrl: "https://map.kakao.com",
     latitude: 37.527086,
     longitude: 127.049367,
      isoDate: "2026-08-15",                          // Date 파싱용 (달력 자동 계산)
-    dateLabel: "2026년 8월 15일 금요일 오전 11시 30분", // 화면에 표시할 텍스트
+    dateLabel: "2026년 8월 15일 금요일 오후 2시 30분", // 화면에 표시할 텍스트
 
     // 교통 정보
     subway: "7호선 청담역 2번 출구 도보 5분",
@@ -98,193 +98,123 @@ export const weddingData = {
   gall: [
   {
     id: 1,
-    src: "/images/gallery/SEN_0052.jpg",
+    src: "/images/gallery/SEN_0052.png",
     alt: "웨딩 사진 1",
     featured: true,
   },
   {
     id: 2,
-    src: "/images/gallery/SEN_0353.jpg",
+    src: "/images/gallery/SEN_0353.png",
     alt: "웨딩 사진 2",
   },
   {
-    id: 3,
-    src: "/images/gallery/SEN_0449.jpg",
-    alt: "웨딩 사진 3",
-  },
-  {
     id: 4,
-    src: "/images/gallery/SEN_0608.jpg",
+    src: "/images/gallery/SEN_0608.png",
     alt: "웨딩 사진 4",
   },
   {
-    id: 5,
-    src: "/images/gallery/SEN_0669.jpg",
-    alt: "웨딩 사진 5",
-  },
-  {
     id: 6,
-    src: "/images/gallery/SEN_0791.jpg",
+    src: "/images/gallery/SEN_0791.png",
     alt: "웨딩 사진 6",
   },
   {
     id: 7,
-    src: "/images/gallery/SEN_0827.jpg",
+    src: "/images/gallery/SEN_0827.png",
     alt: "웨딩 사진 7",
   },
   {
-    id: 8,
-    src: "/images/gallery/SEN_0892.jpg",
-    alt: "웨딩 사진 8",
-  },
-  {
     id: 9,
-    src: "/images/gallery/SEN_1054.jpg",
+    src: "/images/gallery/SEN_1054.png",
     alt: "웨딩 사진 9",
   },
   {
-    id: 10,
-    src: "/images/gallery/SEN_1082.jpg",
-    alt: "웨딩 사진 10",
-  },
-  {
     id: 11,
-    src: "/images/gallery/SEN_1344.jpg",
+    src: "/images/gallery/SEN_1344.png",
     alt: "웨딩 사진 11",
   },
   {
     id: 12,
-    src: "/images/gallery/SEN_1361.jpg",
+    src: "/images/gallery/SEN_1361.png",
     alt: "웨딩 사진 12",
   },
   {
     id: 13,
-    src: "/images/gallery/SEN_1509.jpg",
+    src: "/images/gallery/SEN_1509.png",
     alt: "웨딩 사진 13",
   },
   {
     id: 14,
-    src: "/images/gallery/SEN_1690.jpg",
+    src: "/images/gallery/SEN_1690.png",
     alt: "웨딩 사진 14",
   },
   {
-    id: 15,
-    src: "/images/gallery/SEN_1904.jpg",
-    alt: "웨딩 사진 15",
-  },
-  {
     id: 16,
-    src: "/images/gallery/SEN_2075.jpg",
+    src: "/images/gallery/SEN_2075.png",
     alt: "웨딩 사진 16",
   },
   {
     id: 17,
-    src: "/images/gallery/SEN_2173.jpg",
+    src: "/images/gallery/SEN_2173.png",
     alt: "웨딩 사진 17",
   },
   {
-    id: 18,
-    src: "/images/gallery/SEN_2276.jpg",
-    alt: "웨딩 사진 18",
-  },
-  {
-    id: 19,
-    src: "/images/gallery/SEN_2315.jpg",
-    alt: "웨딩 사진 19",
-  },
-  {
     id: 20,
-    src: "/images/gallery/SEN_2345.jpg",
+    src: "/images/gallery/SEN_2345.png",
     alt: "웨딩 사진 20",
   },
   {
-    id: 21,
-    src: "/images/gallery/SEN_2380.jpg",
-    alt: "웨딩 사진 21",
-  },
-  {
     id: 22,
-    src: "/images/gallery/SEN_2408.jpg",
+    src: "/images/gallery/SEN_2408.png",
     alt: "웨딩 사진 22",
   },
   {
-    id: 23,
-    src: "/images/gallery/SEN_2432.jpg",
-    alt: "웨딩 사진 23",
-  },
-  {
     id: 24,
-    src: "/images/gallery/SEN_2473.jpg",
+    src: "/images/gallery/SEN_2473.png",
     alt: "웨딩 사진 24",
   },
   {
     id: 25,
-    src: "/images/gallery/SEN_2522.jpg",
+    src: "/images/gallery/SEN_2522.png",
     alt: "웨딩 사진 25",
   },
   {
     id: 26,
-    src: "/images/gallery/SEN_2539.jpg",
+    src: "/images/gallery/SEN_2539.png",
     alt: "웨딩 사진 26",
   },
   {
-    id: 27,
-    src: "/images/gallery/SEN_2673.jpg",
-    alt: "웨딩 사진 27",
-  },
-  {
     id: 28,
-    src: "/images/gallery/SEN_2902.jpg",
+    src: "/images/gallery/SEN_2902.png",
     alt: "웨딩 사진 28",
   },
   {
-    id: 29,
-    src: "/images/gallery/SEN_2994.jpg",
-    alt: "웨딩 사진 29",
-  },
-  {
     id: 30,
-    src: "/images/gallery/SEN_3033.jpg",
+    src: "/images/gallery/SEN_3033.png",
     alt: "웨딩 사진 30",
   },
   {
-    id: 31,
-    src: "/images/gallery/SEN_3116.jpg",
-    alt: "웨딩 사진 31",
-  },
-  {
     id: 32,
-    src: "/images/gallery/SEN_3218.jpg",
+    src: "/images/gallery/SEN_3218.png",
     alt: "웨딩 사진 32",
   },
   {
     id: 33,
-    src: "/images/gallery/SEN_3319.jpg",
+    src: "/images/gallery/SEN_3319.png",
     alt: "웨딩 사진 33",
   },
   {
     id: 34,
-    src: "/images/gallery/SEN_3434.jpg",
+    src: "/images/gallery/SEN_3434.png",
     alt: "웨딩 사진 34",
   },
   {
-    id: 35,
-    src: "/images/gallery/SEN_3450.jpg",
-    alt: "웨딩 사진 35",
-  },
-  {
-    id: 36,
-    src: "/images/gallery/SEN_3470.jpg",
-    alt: "웨딩 사진 36",
-  },
-  {
     id: 37,
-    src: "/images/gallery/SEN_3556.jpg",
+    src: "/images/gallery/SEN_3556.png",
     alt: "웨딩 사진 37",
   },
   {
     id: 38,
-    src: "/images/gallery/SEN_3622.jpg",
+    src: "/images/gallery/SEN_3622.png",
     alt: "웨딩 사진 38",
   }
 ],
@@ -294,14 +224,21 @@ export const weddingData = {
       imageSrc: "/images/timeline/first_timeLine.jpg",
       label: "첫 만남",
       highlight: undefined,
-      description: "저희는 미식축구 동아리에서\n처음 만났어요.",
+      description: "저희는 미식축구 동아리에서/br처음 만났어요.",
       // imagePosition 미지정 → index 0 = 이미지 왼쪽
     },
     {
       imageSrc: "/images/timeline/second_timeLine.jpg",
       label: "1주년",
       highlight: "함께한 1년",
-      description: "서로를 알아가는 시간\n이었어요.",
+      description: "서로를 알아가는 시간/br이었어요.",
+      // index 1 = 이미지 오른쪽
+    },
+    {
+      imageSrc: "/images/timeline/fifth_timeLine.png",
+      label: "5주년",
+      highlight: undefined,
+      description: "함께 보낸 시간만큼/br사랑 이상의/br마음을 가지게 되었어요.",
       // index 1 = 이미지 오른쪽
     },
     {
@@ -315,7 +252,7 @@ export const weddingData = {
       imageSrc: "/images/timeline/fourth_timeLine.jpg",
       label: "WeddingDay",
       highlight: undefined,
-      description: "저희는 이날 결혼해요.\n저희의 시작을\n축하해주세요.",
+      description: "저희는 이날 결혼해요./br저희의 시작을/br축하해주세요.",
       // index 3 = 이미지 오른쪽
     },
   ],
@@ -325,46 +262,25 @@ export const weddingData = {
     groom: [
       {
         role: "신랑",
-        bank: "카카오뱅크",
-        account: "1111-1111-1111-1111",
-        holder: "김도연",
+        bank: "신한은행",
+        account: "110484028651",
+        holder: "이정효",
         kakaoPayLink: "https://qr.kakaopay.com/...", // 카카오페이 송금 링크 (없으면 삭제)
-      },
-      {
-        role: "신랑 아버지",
-        bank: "카카오뱅크",
-        account: "1111-1111-1111-1111",
-        holder: "김종혁",
-        kakaoPayLink: "https://qr.kakaopay.com/...",
-      },
-      {
-        role: "신랑 어머니",
-        bank: "카카오뱅크",
-        account: "1111-1111-1111-1111",
-        holder: "최은혜",
-        kakaoPayLink: "https://qr.kakaopay.com/...",
       },
     ],
     bride: [
       {
         role: "신부",
-        bank: "카카오뱅크",
-        account: "1111-1111-1111-1111",
-        holder: "이지유",
+        bank: "농협은행",
+        account: "351-0358-2085-53",
+        holder: "김예진",
         kakaoPayLink: "https://qr.kakaopay.com/...",
       },
       {
-        role: "신부 어머니",
+        role: "신부 아버지",
         bank: "카카오뱅크",
         account: "1111-1111-1111-1111",
-        holder: "이주영",
-        kakaoPayLink: "https://qr.kakaopay.com/...",
-      },
-      {
-        role: "신부 어머니",
-        bank: "카카오뱅크",
-        account: "1111-1111-1111-1111",
-        holder: "강지은",
+        holder: "김형복",
         kakaoPayLink: "https://qr.kakaopay.com/...",
       },
     ],
