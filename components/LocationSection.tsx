@@ -157,11 +157,11 @@ export default function LocationSection() {
           <p className="text-gray-700 font-serif" style={{ fontSize: "clamp(0.9rem, 3.5vw, 1rem)" }}>
             {venueName}
           </p>
-          <a href={`tel:`} aria-label="전화하기" className="text-gray-400 hover:text-gray-600 transition-colors">
+          {/* <a href={`tel:`} aria-label="전화하기" className="text-gray-400 hover:text-gray-600 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
-          </a>
+          </a> */}
         </div>
         <p className="text-gray-500 font-sans font-light" style={{ fontSize: "clamp(0.78rem, 3vw, 0.88rem)" }}>
           {venueDetail}

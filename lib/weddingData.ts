@@ -263,7 +263,7 @@ export const weddingData = {
       {
         role: "신랑",
         bank: "신한은행",
-        account: "110484028651",
+        account: "110-484-028651",
         holder: "이정효",
         kakaoPayLink: "https://qr.kakaopay.com/...", // 카카오페이 송금 링크 (없으면 삭제)
       },
@@ -278,8 +278,8 @@ export const weddingData = {
       },
       {
         role: "신부 아버지",
-        bank: "카카오뱅크",
-        account: "1111-1111-1111-1111",
+        bank: "농협은행",
+        account: "335022-51-144185",
         holder: "김형복",
         kakaoPayLink: "https://qr.kakaopay.com/...",
       },

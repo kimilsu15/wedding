@@ -130,7 +130,7 @@ function AccountRow({ item }: { item: AccountItem }) {
       {/* 우측: 버튼 */}
       <div className="flex flex-col items-end gap-1.5 flex-shrink-0 ml-4">
         <CopyButton text={item.account} />
-        {item.kakaoPayLink && <KakaoPayButton link={item.kakaoPayLink} />}
+        {/* {item.kakaoPayLink && <KakaoPayButton link={item.kakaoPayLink} />} */}
       </div>
     </div>
   );
